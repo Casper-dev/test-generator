@@ -18,6 +18,6 @@ data Event =
 
 instance Show Event where
   show (TransferEvent a b v) =
-    "['Transfer', " ++ show a ++ ", " ++ show b ++ ", " ++ show v ++ "]"
+    "['Transfer', " ++ show a ++ ", " ++ show b ++ ", " ++ num v ++ "]"
   show (ApprovalEvent a b v) =
-    "['Approval', " ++ show a ++ ", " ++ show b ++ ", " ++ show v ++ "]"
+    "['Approval', " ++ show a ++ ", " ++ show b ++ ", " ++ num v ++ "]"

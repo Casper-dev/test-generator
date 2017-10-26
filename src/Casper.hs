@@ -30,6 +30,9 @@ module Casper
   , pushEventsToLog
   , actionsToJS
 
+  , num
+  , nums
+
   , transfer
   , approve
   , transferFrom
