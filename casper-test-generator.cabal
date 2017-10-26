@@ -1,0 +1,21 @@
+name:                casper-test-generator
+version:             0.1.0.0
+synopsis:            Model (oracle) and test generator for Casper token.
+-- description:
+-- license:
+license-file:        LICENSE
+author:              vklntsky
+maintainer:          v.klntsky@mtmining.ru
+-- copyright:
+category:            Testing
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+library
+  -- Modules exported by the library.
+  exposed-modules:     Casper, Casper.Address, Casper.Event, Casper.CodeGen, Casper.TokenState, Casper.CSP, Casper.ScenarioGen, Casper.ScenarioAction, Casper.JSWrapper, Casper.Model
+  -- other-modules:
+  other-extensions:    GADTs, TemplateHaskell, StandaloneDeriving, FlexibleInstances
+  build-depends:       base >=4.9 && <4.10, lens >=4.15 && <4.16, containers >=0.5 && <0.6
+  hs-source-dirs:      src
+  default-language:    Haskell2010
